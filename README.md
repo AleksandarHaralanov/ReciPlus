@@ -90,5 +90,5 @@ shapeless: []
 ```yaml
 furnace: []
 ```
-> [!CAUTION] 
+> [!WARNING] 
 > Do **not** delete the configuration files. Instead, use the aforementioned method to disable them.
