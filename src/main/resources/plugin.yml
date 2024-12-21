@@ -16,5 +16,5 @@ permissions:
       reciplus.config: true
     default: op
   reciplus.config:
-    description: Allows player to reload the ReciPlus recipe configs.
+    description: Allows player to reload the ReciPlus configuration.
     default: op
