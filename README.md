@@ -62,10 +62,10 @@ shapeless:
 ```
 ```yaml
 furnace:
-  r1:               # rX - X being the number of the recipe. Always start from 1 and increment by 1 accordingly
+  r1:            # rX - X being the number of the recipe. Always start from 1 and increment by 1 accordingly
     result:
-      id: "X"       # ID of the result item
-      amount: X     # Amount of the result item (1-64)
+      id: "X"    # ID of the result item
+      amount: X  # Amount of the result item (1-64)
     source: "X"  # ID of the source item
   rX:
     ...
