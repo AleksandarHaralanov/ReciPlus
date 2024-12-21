@@ -86,4 +86,4 @@ shapeless: []
 furnace: []
 ```
 > [!CAUTION] 
-> Do not delete the configuration files. Instead, use the aforementioned method to disable them.
+> Do **not** delete the configuration files. Instead, use the aforementioned method to disable them.
