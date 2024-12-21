@@ -35,7 +35,7 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 ### Configuration
 Automatically generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `plugins/ReciPlus/recipes`.
 
-#### Setting up recipes
+#### Setting up custom recipes
 ```yaml
 shaped:
   r1:            # rX - X being the number of the recipe. Always start from 1 and increment by 1 accordingly
@@ -77,7 +77,7 @@ furnace:
 > 
 > Click [here](assets/Items.png) for a list of all Minecraft b1.7.3 IDs.
 
-#### Disabling certain recipe types
+#### Disabling certain custom recipe types
 If you do not wish to use a certain type of recipe in this plugin, navigate to `ReciPlus/recipes/recipe.yml`, clear the configuration, and put the following inside:
 ```yaml
 shaped: []
