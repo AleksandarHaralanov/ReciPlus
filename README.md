@@ -25,9 +25,9 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 
 #### Permissions:
 ##### Single permissions:
-- `reciplus.reload` - Allows player to reload the ReciPlus recipe configs.
+- `reciplus.config` - Allows player to reload the ReciPlus recipe configs.
 ##### Wildcard permissions:
-- `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.reload`)
+- `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.config`)
 
 ### Configuration
 Automatically generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `plugins/ReciPlus/recipes`.
