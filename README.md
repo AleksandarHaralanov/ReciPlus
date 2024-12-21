@@ -6,7 +6,8 @@
 Latest releases of **ReciPlus** can be found here on [GitHub](https://github.com/AleksandarHaralanov/ReciPlus/releases).<br>
 Alternatively, you can also download through [Modrinth](https://modrinth.com/plugin/ReciPlus/versions).
 
-The plugin is fully open-source and transparent. If you'd like additional peace of mind, you're welcome to scan the `.jar` file using [VirusTotal](https://www.virustotal.com/gui/home/upload).
+The plugin is fully open-source and transparent.<br>
+If you'd like additional peace of mind, you're welcome to scan the `.jar` file using [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
 ### Requirements
 Your b1.7.3 server must be running one of the following APIs: CB1060-CB1092, [Project Poseidon](https://github.com/retromcorg/Project-Poseidon) or [UberBukkit](https://github.com/Moresteck/Project-Poseidon-Uberbukkit).
