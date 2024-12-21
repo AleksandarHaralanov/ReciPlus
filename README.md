@@ -2,6 +2,7 @@
 ## What's ReciPlus?
 **ReciPlus** is a Minecraft plugin designed for servers running version b1.7.3. It allows server operators to add custom crafting and furnace recipes with high customizability.
 
+---
 ### Download
 Latest releases of **ReciPlus** can be found here on [GitHub](https://github.com/AleksandarHaralanov/ReciPlus/releases).<br>
 Alternatively, you can also download through [Modrinth](https://modrinth.com/plugin/ReciPlus/versions).
@@ -9,11 +10,11 @@ Alternatively, you can also download through [Modrinth](https://modrinth.com/plu
 The plugin is fully open-source and transparent.<br>
 If you'd like additional peace of mind, you're welcome to scan the `.jar` file using [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
+---
 ### Requirements
 Your b1.7.3 server must be running one of the following APIs: CB1060-CB1092, [Project Poseidon](https://github.com/retromcorg/Project-Poseidon) or [UberBukkit](https://github.com/Moresteck/Project-Poseidon-Uberbukkit).
 
-
-
+---
 ### Usage
 By default, only OPs have permission.
 
@@ -30,6 +31,7 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 ##### Wildcard permissions:
 - `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.config`)
 
+---
 ### Configuration
 Automatically generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `plugins/ReciPlus/recipes`.
 
