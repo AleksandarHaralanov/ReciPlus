@@ -77,7 +77,7 @@ furnace:
 > 
 > Click [here](assets/Items.png) for a list of all Minecraft b1.7.3 IDs.
 
-#### Disabling certain custom recipe types
+#### Disabling custom recipe types
 If you do not wish to use a certain type of recipe in this plugin, navigate to `ReciPlus/recipes/recipe.yml`, clear the configuration, and put the following inside:
 ```yaml
 shaped: []
