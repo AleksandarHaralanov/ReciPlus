@@ -23,11 +23,11 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 #### Commands
 - `/rp` - View ReciPlus commands.
 - `/rp about` - About ReciPlus.
-- `/rp reload` - `reciplus.config` - Reload all ReciPlus recipe configs.
+- `/rp reload` - `reciplus.config` - Reload ReciPlus configuration.
 
 #### Permissions:
 ##### Single permissions:
-- `reciplus.config` - Allows player to reload the ReciPlus recipe configs.
+- `reciplus.config` - Allows player to reload the ReciPlus configuration.
 ##### Wildcard permissions:
 - `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.config`)
 
