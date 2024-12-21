@@ -35,6 +35,11 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 ### Configuration
 Automatically generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `plugins/ReciPlus/recipes`.
 
+> [!CAUTION]
+> It is **very** important to follow these layout patterns exactly as they are.
+> 
+> Otherwise, the plugin will not work, or you might even end up with improper recipes.
+
 #### Setting up custom recipes
 ```yaml
 shaped:
@@ -90,5 +95,5 @@ shapeless: []
 ```yaml
 furnace: []
 ```
-> [!WARNING] 
+> [!NOTICE] 
 > Do **not** delete the configuration files. Instead, use the aforementioned method to disable them.
