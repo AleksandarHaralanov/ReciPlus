@@ -73,7 +73,9 @@ furnace:
     ...
 ```
 > [!TIP]
-> When writing IDs, you can include metadata if desired, as long as the item can support metadata. For example, `"35:14"` represents Red Wool, whereas `"35"`, or `"35:0"`, represents plain White Wool.
+> When writing IDs, you can include metadata if desired, as long as the item can support metadata.
+> 
+> For example, `"35:14"` represents Red Wool, whereas `"35"`, or `"35:0"`, represents plain White Wool.
 > 
 > Click [here](assets/Items.png) for a list of all Minecraft b1.7.3 IDs.
 
