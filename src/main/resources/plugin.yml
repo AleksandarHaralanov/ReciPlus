@@ -1,0 +1,20 @@
+main: io.github.aleksandarharalanov.reciplus.ReciPlus
+version: 1.0.0
+name: ReciPlus
+author: Beezle
+website: github.com/AleksandarHaralanov/ReciPlus
+description: Custom crafting and smelting recipes.
+
+commands:
+  reciplus:
+    usage: /reciplus
+    aliases: [rp]
+
+permissions:
+  reciplus.*:
+    children:
+      reciplus.config: true
+    default: op
+  reciplus.config:
+    description: Allows player to reload the ReciPlus recipe configs.
+    default: op
