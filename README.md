@@ -33,7 +33,7 @@ Use PermissionsEx or similar plugins to grant groups the permission, enabling th
 
 ---
 ### Configuration
-Automatically generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `ReciPlus/recipes`.
+Generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `ReciPlus/recipes`.
 
 > [!CAUTION]
 > It is **very** important to follow these layout patterns exactly as they are.
