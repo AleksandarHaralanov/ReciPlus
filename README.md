@@ -72,6 +72,7 @@ furnace:
 ```
 > [!NOTE]
 > When writing IDs, include metadata if needed. For example, use "35:14" for Red Wool, whereas "35"/"35:0" represents plain White Wool.
+> 
 > Click [here](assets/Items.png) for a list of all Minecraft b1.7.3 IDs.
 ---
 To disable a specific recipe type, navigate to `ReciPlus/recipes/recipe.yml`, clear the configuration, and put the following inside:
@@ -84,4 +85,5 @@ shapeless: []
 ```yaml
 furnace: []
 ```
-> [!CAUTION] Do NOT delete the configuration files!
+> [!CAUTION] 
+> Do NOT delete the configuration files!
