@@ -44,6 +44,8 @@ Generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` l
 > 
 > *Incorrectly following this pattern can cause the plugin to break entirely or result in improper recipes.*
 
+See the templates below, followed by a deeper explanation of the IDs and how you can use metadata.
+
 #### Setting up custom recipes
 ```yaml
 shaped:
