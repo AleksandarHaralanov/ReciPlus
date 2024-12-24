@@ -20,7 +20,7 @@ By default, only OPs have permission.
 
 Use PermissionsEx or similar plugins to grant groups the permission, enabling the commands.
 
-#### Commands
+#### Commands:
 - `/rp` - View ReciPlus commands.
 - `/rp about` - About ReciPlus.
 - `/rp reload` - `reciplus.config` - Reload ReciPlus configuration.
