@@ -38,7 +38,10 @@ Generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` l
 > [!CAUTION]
 > It is **very** important to follow these layout patterns exactly as they are.
 > 
-> Otherwise, the plugin will not work, or you might even end up with improper recipes.
+> Double quotes: Use them exactly where shown. "X" is used for IDs to ensure proper parsing.
+> No quotes: When no quotes are present, it indicates a plain number, like 1, which YAML handles as an integer.
+> 
+> Incorrectly following this pattern can cause the plugin to malfunction or result in improper recipes.
 
 #### Setting up custom recipes
 ```yaml
