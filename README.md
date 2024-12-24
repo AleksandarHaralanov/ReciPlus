@@ -42,7 +42,7 @@ Generates configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` l
 > 
 > No quotes: When no quotes are present, it indicates a plain number, like 1, which YAML handles as an integer.
 > 
-> Incorrectly following this pattern can cause the plugin to malfunction or result in improper recipes.
+> Incorrectly following this pattern can cause the plugin to break entirely or result in improper recipes.
 
 #### Setting up custom recipes
 ```yaml
