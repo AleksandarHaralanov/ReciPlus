@@ -26,17 +26,11 @@ public class RecipeHandler {
         List<String> shaped = getShaped().getKeys("shaped");
         if (shaped != null) {
             for (int i = 0; i < shaped.size(); i++) {
-                String resultEntry = getShaped().getString(String.format("shaped.r%d.result.id", i + 1));
-                String[] resultIdData = resultEntry.contains(":") ? resultEntry.split(":") : new String[]{resultEntry, "0"};
-                int resultId = Integer.parseInt(resultIdData[0]);
-                byte resultData = Byte.parseByte(resultIdData[1]);
-                int resultAmount = getShaped().getInt(String.format("shaped.r%d.result.amount", i + 1), 1);
-                ItemStack result = new ItemStack(resultId, resultAmount, resultData);
-
+                ItemStack result = getResultItem("shaped", i + 1);
                 ShapedRecipe shapedRecipe = new ShapedRecipe(result);
                 List<String> rows = getShaped().getStringList(String.format("shaped.r%d.grid", i + 1), new ArrayList<>());
                 String[] grid = rows.toArray(new String[0]);
-                shapedRecipe.shape(grid[0], grid[1], grid[2]);
+                shapedRecipe.shape(grid);
 
                 List<String> ingredients = getShaped().getStringList(String.format("shaped.r%d.ingredients", i + 1), new ArrayList<>());
                 for (String entry : ingredients) {
@@ -58,15 +52,8 @@ public class RecipeHandler {
         List<String> shapeless = getShapeless().getKeys("shapeless");
         if (shapeless != null) {
             for (int i = 0; i < shapeless.size(); i++) {
-                String resultEntry = getShapeless().getString(String.format("shapeless.r%d.result.id", i + 1));
-                String[] resultIdData = resultEntry.contains(":") ? resultEntry.split(":") : new String[]{resultEntry, "0"};
-                int resultId = Integer.parseInt(resultIdData[0]);
-                byte resultData = Byte.parseByte(resultIdData[1]);
-                int resultAmount = getShapeless().getInt(String.format("shapeless.r%d.result.amount", i + 1), 1);
-                ItemStack result = new ItemStack(resultId, resultAmount, resultData);
-
+                ItemStack result = getResultItem("shapeless", i + 1);
                 ShapelessRecipe shapelessRecipe = new ShapelessRecipe(result);
-
                 List<String> ingredients = getShapeless().getStringList(String.format("shapeless.r%d.ingredients", i + 1), new ArrayList<>());
                 for (String entry : ingredients) {
                     String[] ingredientIdData = entry.contains(":") ? entry.split(":") : new String[]{entry, "0"};
@@ -85,24 +72,40 @@ public class RecipeHandler {
         List<String> furnace = getFurnace().getKeys("furnace");
         if (furnace != null) {
             for (int i = 0; i < furnace.size(); i++) {
-                String resultEntry = getFurnace().getString(String.format("furnace.r%d.result.id", i + 1));
-                String[] resultIdData = resultEntry.contains(":") ? resultEntry.split(":") : new String[]{resultEntry, "0"};
-                int resultId = Integer.parseInt(resultIdData[0]);
-                byte resultData = Byte.parseByte(resultIdData[1]);
-                int resultAmount = getFurnace().getInt(String.format("furnace.r%d.result.amount", i + 1), 1);
-                ItemStack result = new ItemStack(resultId, resultAmount, resultData);
-
+                ItemStack result = getResultItem("furnace", i + 1);
                 String sourceEntry = getFurnace().getString(String.format("furnace.r%d.source", i + 1));
                 String[] sourceIdData = sourceEntry.contains(":") ? sourceEntry.split(":") : new String[]{sourceEntry, "0"};
                 int sourceId = Integer.parseInt(sourceIdData[0]);
                 byte sourceData = Byte.parseByte(sourceIdData[1]);
-
                 FurnaceRecipe furnaceRecipe = new FurnaceRecipe(result, new MaterialData(sourceId, sourceData));
-
                 Bukkit.getServer().addRecipe(furnaceRecipe);
             }
         }
         logRecipeCount(pdf.getName(), "Furnace", furnace);
+    }
+
+    private static ItemStack getResultItem(String configOption, int i) {
+        String resultEntry = "";
+        int resultAmount = 0;
+        switch (configOption) {
+            case "shaped":
+                resultEntry = getShaped().getString(String.format("%s.r%d.result.id", configOption, i));
+                resultAmount = getShaped().getInt(String.format("%s.r%d.result.amount", configOption, i), 1);
+                break;
+            case "shapeless":
+                resultEntry = getShapeless().getString(String.format("%s.r%d.result.id", configOption, i));
+                resultAmount = getShapeless().getInt(String.format("%s.r%d.result.amount", configOption, i), 1);
+                break;
+            case "furnace":
+                resultEntry = getFurnace().getString(String.format("%s.r%d.result.id", configOption, i));
+                resultAmount = getFurnace().getInt(String.format("%s.r%d.result.amount", configOption, i), 1);
+                break;
+        }
+        String[] resultIdData = resultEntry.contains(":") ? resultEntry.split(":") : new String[] { resultEntry, "0" };
+        int resultId = Integer.parseInt(resultIdData[0]);
+        byte resultData = Byte.parseByte(resultIdData[1]);
+
+        return new ItemStack(resultId, resultAmount, resultData);
     }
 
     private static void logRecipeCount(String pluginName, String recipeType, List<String> recipes) {
