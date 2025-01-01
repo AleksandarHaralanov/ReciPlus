@@ -5,7 +5,6 @@
 ---
 ### Download
 Latest releases of **ReciPlus** can be found here on [GitHub](https://github.com/AleksandarHaralanov/ReciPlus/releases).<br>
-Alternatively, you can also download through [Modrinth](https://modrinth.com/plugin/ReciPlus/versions).
 
 The plugin is fully open-source and transparent.<br>
 If you'd like additional peace of mind, you're welcome to scan the `.jar` file using [VirusTotal](https://www.virustotal.com/gui/home/upload).
@@ -53,9 +52,9 @@ shaped:
     result:
       id: "X"    # ID of the result item
       amount: X  # Amount of the result item (1-64)
-    grid:        # 3x3 Grid (* for nothing - Character to assign to an ingredient)
-      - "***"
-      - "***"
+    grid:        # Grid can be 1x1, 1x2, 1x3, 2x2, 2x3, and 3x3
+      - "***"    # If your recipe specifically needs air (nothing) somewhere, then use '*'
+      - "***"    # And 'X' (replace X with a char that isn't '*') for any respective ingredient below
       - "***"
     ingredients:
       - "X;X"    # Left is assigned character for ingredient - Right is ID of that ingredient
