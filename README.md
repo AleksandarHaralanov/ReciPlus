@@ -1,37 +1,38 @@
 # ReciPlus
-## What's ReciPlus?
-**ReciPlus** is a Minecraft plugin designed for servers running version b1.7.3. It allows server operators to add custom crafting and furnace recipes with high customizability.
+**ReciPlus** is a Minecraft plugin designed for servers running version b1.7.3.
+
+It allows server operators to add custom crafting and furnace recipes with high customizability.
 
 ---
-### Download
+## Download
 Latest releases of **ReciPlus** can be found here on [GitHub](https://github.com/AleksandarHaralanov/ReciPlus/releases).<br>
 
 The plugin is fully open-source and transparent.<br>
 If you'd like additional peace of mind, you're welcome to scan the `.jar` file using [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
 ---
-### Requirements
+## Requirements
 Your b1.7.3 server must be running one of the following APIs: CB1060-CB1092, [Project Poseidon](https://github.com/retromcorg/Project-Poseidon) or [UberBukkit](https://github.com/Moresteck/Project-Poseidon-Uberbukkit).
 
 ---
-### Usage
+## Usage
 By default, only OPs have permission.
 
 Use PermissionsEx or similar plugins to grant groups the permission, enabling the commands.
 
-#### Commands:
+### Commands:
 - `/rp` - View ReciPlus commands.
 - `/rp about` - About ReciPlus.
 - `/rp reload` - `reciplus.config` - Reload ReciPlus configuration.
 
-#### Permissions:
-##### Single permissions:
+### Permissions:
+#### Single permissions:
 - `reciplus.config` - Allows player to reload the ReciPlus configuration.
-##### Wildcard permissions:
+#### Wildcard permissions:
 - `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.config`)
 
 ---
-### Configuration
+## Configuration
 Generates empty configuration files `shaped.yml`, `shapeless.yml`, and `furnace.yml` located at `ReciPlus/recipes`.
 
 > [!CAUTION]
@@ -45,7 +46,7 @@ Generates empty configuration files `shaped.yml`, `shapeless.yml`, and `furnace.
 
 See the templates below, followed by a deeper explanation of the IDs and how you can use metadata.
 
-#### Setting up custom recipes
+### Setting up custom recipes
 ```yaml
 shaped:
   r1:            # rX - X being the number of the recipe. Always start from 1 and increment by 1 accordingly
@@ -89,7 +90,7 @@ furnace:
 > 
 > Click [here](assets/Items.png) for a list of all Minecraft b1.7.3 IDs.
 
-#### Disabling custom recipe types
+### Disabling custom recipe types
 If you do not wish to use a certain type of recipe in this plugin, navigate to `ReciPlus/recipes/recipe.yml`, clear the configuration, and put the following inside:
 ```yaml
 shaped: []
