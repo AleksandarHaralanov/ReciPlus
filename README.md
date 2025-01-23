@@ -4,6 +4,14 @@
 It allows server operators to add custom crafting and furnace recipes with high customizability.
 
 ---
+## Contributing Code & Reporting Issues
+Consider helping ReciPlus become even more versatile and robust.
+
+Visit the [CONTRIBUTING](https://github.com/AleksandarHaralanov/ReciPlus/blob/master/.github/CONTRIBUTING.md) guide for details on how to get started and where to focus your efforts.
+
+For any issues with the plugin, or suggestions, please report them [here](https://github.com/AleksandarHaralanov/ReciPlus/issues).
+
+---
 ## Download
 Latest releases of **ReciPlus** can be found here on [GitHub](https://github.com/AleksandarHaralanov/ReciPlus/releases).<br>
 
