@@ -29,15 +29,17 @@ By default, only OPs have permission.
 Use PermissionsEx or similar plugins to grant groups the permission, enabling the commands.
 
 ### Commands:
-- `/rp` - View ReciPlus commands.
-- `/rp about` - About ReciPlus.
-- `/rp reload` - `reciplus.config` - Reload ReciPlus configuration.
+| Command | Permission | Description |
+|---------|------------|-------------|
+| `/rp` | None | View ReciPlus commands. |
+| `/rp about` | None | About ReciPlus. |
+| `/rp reload` | `reciplus.config` | Reload ReciPlus configuration. |
 
 ### Permissions:
-#### Single permissions:
-- `reciplus.config` - Allows player to reload the ReciPlus configuration.
-#### Wildcard permissions:
-- `reciplus.*` - Wildcard permission granting everything. (Currently only `reciplus.config`)
+| Permission | Description |
+|------------|-------------|
+| `reciplus.*` | Wildcard permission granting everything. |
+| `reciplus.config` | Allows player to reload the ReciPlus configuration. |
 
 ---
 ## Configuration
