@@ -3,6 +3,11 @@
 
 It allows server operators to add custom crafting and furnace recipes with high customizability.
 
+![Software](https://img.shields.io/badge/build-craftbukkit1060-purple)
+![Version](https://img.shields.io/github/v/release/AleksandarHaralanov/ReciPlus?display_name=tag&sort=semver)
+![Downloads](https://img.shields.io/github/downloads/AleksandarHaralanov/ReciPlus/total?color=green)
+![License](https://img.shields.io/github/license/AleksandarHaralanov/ReciPlus)
+
 ---
 ## Contributing Code & Reporting Issues
 Consider helping ReciPlus become even more versatile and robust.
